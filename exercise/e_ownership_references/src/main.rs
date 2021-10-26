@@ -51,9 +51,7 @@ fn inspect(s: &String) {
 }
 
 fn change(s: &mut String) {
-    if s.ends_with("s") {
-        // Do nothing
-    } else {
+    if !s.ends_with("s") {
         s.push_str("s");
     }
 }
